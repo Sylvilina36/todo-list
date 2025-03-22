@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTP Validation</title>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="image-section"></div>
+        <div class="login-section">
+            <h2>Verify OTP</h2>
+            <form action="otp.php" method="POST">
+                <label>Enter OTP:</label>
+                <input type="number" name="otp" id="otp-code" placeholder="Enter OTP code" required>
+                <button type="submit" class="submit">Verify OTP</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
