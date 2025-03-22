@@ -23,7 +23,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $stmt->fetch();
 
             if (password_verify($password, $hashed_password)) {
-                echo "Login successful. Redirecting...";
                 header("refresh:2; url=TODO.html"); // Redirect to dashboard or homepage
                 exit();
             } else {
